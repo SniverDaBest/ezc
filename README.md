@@ -1,3 +1,5 @@
+[![Builds](https://github.com/SniverDaBest/ezc/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/SniverDaBest/ezc/actions/workflows/rust.yml)
+
 # How to use
 `ezc` is supposed to be really easy to use, as `YAML` is a very user friendly, easy to use configuration format.\
 Here's an example of an `ezc.yml` file in your project:
