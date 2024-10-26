@@ -83,8 +83,10 @@ fn main() {
 
     compile_command = config.cc;
     compile_command += format!(" -o {}", config.output).as_str();
-    for lib in config.extra_libs.unwrap() {
-        compile_command += format!(" -l{lib}").as_str();
+    if config.extra_libs.is_some() {
+        for lib in config.extra_libs.unwrap() {
+            compile_command += format!(" -l{lib}").as_str();
+        }
     }
     compile_command += " *.o";
 
